@@ -30,8 +30,8 @@ import { Button } from "@/components/ui/button";
 
 export function Dashboard() {
   return (
-    <div className="flex h-screen w-full flex-col">
-      <header className="flex h-14 items-center border-b bg-gray-100 px-4 dark:border-gray-800 dark:bg-gray-950">
+    <div className="flex h-screen w-full flex-col ">
+      <header className="flex h-14 items-center border-b bg-gray-100 px-4 dark:border-gray-800 dark:bg-gray-950 justify-between">
         <div className="flex items-center gap-4">
           <Link className="flex items-center gap-2" href="#">
             <MountainIcon className="h-6 w-6" />
@@ -45,6 +45,12 @@ export function Dashboard() {
               type="search"
             />
           </div>
+        </div>
+        <div>
+          <Avatar>
+            <AvatarImage alt="@shadcn" src="/placeholder-avatar.jpg" />
+            <AvatarFallback>JP</AvatarFallback>
+          </Avatar>
         </div>
       </header>
       <div className="flex flex-1">
