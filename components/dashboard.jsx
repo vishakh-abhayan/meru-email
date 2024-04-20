@@ -86,58 +86,105 @@ export function Dashboard() {
             </Link>
           </div>
         </nav>
-        <div className="flex flex-1 flex-col">
+        <div className="flex flex-1 flex-col ">
           <div className="flex-1 overflow-auto border-r dark:border-gray-800">
-            <div className="divide-y dark:divide-gray-800">
-              <div className="group flex cursor-pointer items-center gap-4 px-4 py-3 transition-colors hover:bg-gray-100 dark:hover:bg-gray-800">
-                <Avatar>
-                  <AvatarImage alt="@shadcn" />
-                  <AvatarFallback>CN</AvatarFallback>
-                </Avatar>
-                <div className="flex-1">
-                  <div className="flex items-center justify-between">
-                    <h4 className="text-sm font-medium">Olivia Davis</h4>
-                    <span className="text-xs text-gray-500 dark:text-gray-400">
-                      Oct 08, 2023
-                    </span>
+            <div className="divide-y dark:divide-gray-800  flex flex-row">
+              <div className="gap-4 py-4">
+                <div className="group flex cursor-pointer items-center gap-4 px-4 py-3 transition-colors hover:bg-gray-100 dark:hover:bg-gray-800">
+                  <Avatar>
+                    <AvatarImage alt="@shadcn" />
+                    <AvatarFallback>CN</AvatarFallback>
+                  </Avatar>
+                  <div className="flex-1">
+                    <div className="flex items-center justify-between">
+                      <h4 className="text-sm font-medium">Olivia Davis</h4>
+                      <span className="text-xs text-gray-500 dark:text-gray-400">
+                        Oct 08, 2023
+                      </span>
+                    </div>
+                    <div className="mt-1 text-sm text-gray-500 dark:text-gray-400">
+                      Question about Budget
+                    </div>
                   </div>
-                  <div className="mt-1 text-sm text-gray-500 dark:text-gray-400">
-                    Question about Budget
+                </div>
+                <div className="group flex cursor-pointer items-center gap-4 px-4 py-3 transition-colors hover:bg-gray-100 dark:hover:bg-gray-800">
+                  <Avatar>
+                    <AvatarImage alt="@shadcn" />
+                    <AvatarFallback>JP</AvatarFallback>
+                  </Avatar>
+                  <div className="flex-1">
+                    <div className="flex items-center justify-between">
+                      <h4 className="text-sm font-medium">Jared Palmer</h4>
+                      <span className="text-xs text-gray-500 dark:text-gray-400">
+                        Oct 07, 2023
+                      </span>
+                    </div>
+                    <div className="mt-1 text-sm text-gray-500 dark:text-gray-400">
+                      Meeting Agenda
+                    </div>
+                  </div>
+                </div>
+                <div className="group flex cursor-pointer items-center gap-4 px-4 py-3 transition-colors hover:bg-gray-100 dark:hover:bg-gray-800">
+                  <Avatar>
+                    <AvatarImage alt="@shadcn" />
+                    <AvatarFallback>JD</AvatarFallback>
+                  </Avatar>
+                  <div className="flex-1">
+                    <div className="flex items-center justify-between">
+                      <h4 className="text-sm font-medium">John Doe</h4>
+                      <span className="text-xs text-gray-500 dark:text-gray-400">
+                        Oct 06, 2023
+                      </span>
+                    </div>
+                    <div className="mt-1 text-sm text-gray-500 dark:text-gray-400">
+                      Project Update
+                    </div>
                   </div>
                 </div>
               </div>
-              <div className="group flex cursor-pointer items-center gap-4 px-4 py-3 transition-colors hover:bg-gray-100 dark:hover:bg-gray-800">
-                <Avatar>
-                  <AvatarImage alt="@shadcn" />
-                  <AvatarFallback>JP</AvatarFallback>
-                </Avatar>
-                <div className="flex-1">
-                  <div className="flex items-center justify-between">
-                    <h4 className="text-sm font-medium">Jared Palmer</h4>
-                    <span className="text-xs text-gray-500 dark:text-gray-400">
-                      Oct 07, 2023
-                    </span>
+              <div className="flex-1 p-6">
+                <div className="flex items-start gap-4 border-b pb-4 dark:border-gray-800">
+                  <Avatar>
+                    <AvatarImage alt="@shadcn" />
+                    <AvatarFallback>CN</AvatarFallback>
+                  </Avatar>
+                  <div className="grid gap-1">
+                    <div className="font-semibold">Olivia Davis</div>
+                    <div className="line-clamp-1 text-xs">
+                      Question about Budget
+                    </div>
+                    <div className="line-clamp-1 text-xs">
+                      <span className="font-medium">Reply-To:</span>
+                      olivia.davis@vercel.com
+                    </div>
                   </div>
-                  <div className="mt-1 text-sm text-gray-500 dark:text-gray-400">
-                    Meeting Agenda
+                  <div className="ml-auto text-xs text-gray-500 dark:text-gray-400">
+                    Oct 08, 2023 9:15 AM
                   </div>
                 </div>
-              </div>
-              <div className="group flex cursor-pointer items-center gap-4 px-4 py-3 transition-colors hover:bg-gray-100 dark:hover:bg-gray-800">
-                <Avatar>
-                  <AvatarImage alt="@shadcn" />
-                  <AvatarFallback>JD</AvatarFallback>
-                </Avatar>
-                <div className="flex-1">
-                  <div className="flex items-center justify-between">
-                    <h4 className="text-sm font-medium">John Doe</h4>
-                    <span className="text-xs text-gray-500 dark:text-gray-400">
-                      Oct 06, 2023
-                    </span>
-                  </div>
-                  <div className="mt-1 text-sm text-gray-500 dark:text-gray-400">
-                    Project Update
-                  </div>
+                <div className="flex-1 whitespace-pre-wrap p-4 text-sm prose prose-sm prose-p:leading-normal">
+                  <p>
+                    Hi, let's have a meeting tomorrow to discuss the project.
+                    I've been reviewing the project details and have some ideas
+                    I'd like to share. It's crucial that we align on our next
+                    steps to ensure the project's success.
+                  </p>
+                  <p>
+                    Please come prepared with any questions or insights you may
+                    have. Looking forward to our meeting!
+                  </p>
+                  <p>
+                    Best,
+                    <br />
+                    Olivia
+                  </p>
+                </div>
+                <div className="mt-6 flex gap-2">
+                  <Button variant="outline">Reply</Button>
+                  <Button variant="outline">Forward</Button>
+                  <Button className="ml-auto" variant="outline">
+                    Delete
+                  </Button>
                 </div>
               </div>
             </div>
