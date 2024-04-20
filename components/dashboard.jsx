@@ -79,7 +79,7 @@ export function Dashboard() {
                       </span>
                     </div>
                     <div className="mt-1 text-sm text-gray-500 dark:text-gray-400">
-                      Question about Budget
+                      Meeting With Manager
                     </div>
                   </div>
                 </div>
@@ -127,7 +127,7 @@ export function Dashboard() {
                   <div className="grid gap-1">
                     <div className="font-semibold">Olivia Davis</div>
                     <div className="line-clamp-1 text-xs">
-                      Question about Budget
+                      Meeting With Manager For Campus Tour
                     </div>
                     <div className="line-clamp-1 text-xs">
                       <span className="font-medium">Reply-To:</span>
@@ -140,10 +140,10 @@ export function Dashboard() {
                 </div>
                 <div className="flex-1 whitespace-pre-wrap p-4 text-sm prose prose-sm prose-p:leading-normal">
                   <p>
-                    Hi, let's have a meeting tomorrow to discuss the project.
-                    I've been reviewing the project details and have some ideas
-                    I'd like to share. It's crucial that we align on our next
-                    steps to ensure the project's success.
+                    Hi, let's have a meeting tomorrow to discuss the about the
+                    campus tour. Hence all the student council memebers are
+                    requested to meet the Manager for a meeting at 4pm sharp in
+                    the premises of the Autitorium.
                   </p>
                   <p>
                     Please come prepared with any questions or insights you may
