@@ -12,7 +12,7 @@ const Textarea = React.forwardRef(({ className, ...props }, ref) => {
   };
 
   const handleKeyDown = async (e) => {
-    if (e.altKey && e.key === "k") {
+    if (e.altKey || (e.metakey && e.key === "k")) {
       e.preventDefault();
       const prompt = window.prompt("Enter your prompt:");
       if (prompt) {
