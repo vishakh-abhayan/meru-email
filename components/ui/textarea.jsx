@@ -12,7 +12,7 @@ const Textarea = React.forwardRef(({ className, ...props }, ref) => {
   };
 
   const handleKeyDown = async (e) => {
-    if (e.altKey || (e.metakey && e.key === "k")) {
+    if ((e.altKey && e.key === "k") || (e.metakey && e.key === "k")) {
       e.preventDefault();
       const prompt = window.prompt("Enter your prompt:");
       if (prompt) {
@@ -28,8 +28,7 @@ const Textarea = React.forwardRef(({ className, ...props }, ref) => {
           const data = await response.json();
           console.log(data);
           if (response.ok) {
-            const updatedText = textarea + data.text;
-            setTextarea(updatedText);
+            setTextarea(textarea + data.text);
             injectTextAtCursor(updatedText);
           } else {
             console.error("Error:", data.error);
@@ -64,7 +63,7 @@ const Textarea = React.forwardRef(({ className, ...props }, ref) => {
           "flex min-h-[350px] w-full rounded-md border border-gray-200 bg-white px-3 py-2 text-sm ring-offset-white placeholder:text-gray-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-950 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-800 dark:bg-gray-950 dark:ring-offset-gray-950 dark:placeholder:text-gray-400 dark:focus-visible:ring-gray-300",
           className
         )}
-        // {...props}
+        {...props}
       />
     </div>
   );
