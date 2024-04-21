@@ -140,7 +140,7 @@ export function Dashboard() {
                 </div>
                 <div className="flex-1 whitespace-pre-wrap p-4 text-sm prose prose-sm prose-p:leading-normal">
                   <p>
-                    Hi, let's have a meeting tomorrow to discuss the about the
+                    Hi, lets have a meeting tomorrow to discuss the about the
                     campus tour. Hence all the student council memebers are
                     requested to meet the Manager for a meeting at 4pm sharp in
                     the premises of the Autitorium.
